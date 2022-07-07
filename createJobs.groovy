@@ -14,7 +14,7 @@ pipelineJob('employee-job') {
                     remote {
                         url 'https://github.com/hugojesusmr/employee.git'
                     }
-                    branch 'master'
+                    branch 'main'
                 }
             }
         }
