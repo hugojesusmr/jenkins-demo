@@ -12,7 +12,7 @@ pipelineJob('employee-job') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/hugojesusmr/jenkins-demo.git'
+                        url 'https://github.com/hugojesusmr/employee.git'
                     }
                     branch 'master'
                 }
