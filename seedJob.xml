@@ -12,7 +12,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/employee-job</name>
+        <name>*/employee-job-docker</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -26,7 +26,7 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.77">
+    <javaposse.jobdsl.plugin.ExecuteDslScriptdockers plugin="job-dsl@1.77">
       <targets>createJobs.groovy</targets>
       <usingScriptText>false</usingScriptText>
       <sandbox>false</sandbox>

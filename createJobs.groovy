@@ -20,3 +20,18 @@ pipelineJob('employee-job') {
         }
     }
 }
+pipelineJob('employee-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/hugojesusmr/employee.git'
+                    }
+                    branch 'main'
+                    scriptPath 'Jenkinsfile-docker'
+                }
+            }
+        }
+    }
+}
