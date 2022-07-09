@@ -28,7 +28,7 @@ pipelineJob('employee-job-dockerTwo') {
                         remote {
                             url 'https://github.com/hugojesusmr/employee.git'
                         }
-                        branch 'master'
+                        branch 'main'
                         scriptPath('Jenkinsfile-docker')
                 }
             }
