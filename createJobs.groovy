@@ -41,10 +41,9 @@ pipelineJob('employee-job-kubernates') {
                 scm {
                     git {
                         remote {
-                            url 'https://github.com/hugojesusmr/jenkins-demo.git'
+                            url 'https://github.com/hugojesusmr/employee.git'
                         }
                         branch 'main'
-                        scriptPath('deploymentservice.yml')
                 }
             }
         }
