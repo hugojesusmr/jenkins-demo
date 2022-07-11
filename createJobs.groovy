@@ -35,3 +35,18 @@ pipelineJob('employee-job-dockerTwo') {
         }
     }  
 }
+pipelineJob('employee-job-kubernates') {
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url 'https://github.com/hugojesusmr/jenkins-demo.git'
+                        }
+                        branch 'main'
+                        scriptPath('deploymentservice.yml')
+                }
+            }
+        }
+    }  
+}
