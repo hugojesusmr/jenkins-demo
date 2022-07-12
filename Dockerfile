@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:lts
 FROM python:latest as py
-USER root
+
 RUN curl -sSL https://get.docker.com/ | sh
 RUN usermod -a -G docker jenkins
 USER jenkins
