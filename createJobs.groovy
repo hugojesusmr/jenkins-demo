@@ -35,5 +35,19 @@ pipelineJob('employee-job-sonarqube') {
         }
     }  
 }
-
+pipelineJob('employee-job-dockerTwo') {
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url 'https://github.com/hugojesusmr/employee.git'
+                        }
+                        branch 'main'
+                        scriptPath('Jenkinsfile-docker')
+                }
+            }
+        }
+    }  
+}
 
