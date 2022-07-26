@@ -20,6 +20,21 @@ pipelineJob('employee-job') {
         }
     }
 }  
+pipelineJob('employee-job-sonarqube') {
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url 'https://github.com/hugojesusmr/employee.git'
+                        }
+                        branch 'main'
+                        scriptPath('Jenkinsfile-sonarqube')
+                }
+            }
+        }
+    }  
+}
 pipelineJob('employee-job-dockerTwo') {
         definition {
             cpsScm {
@@ -30,6 +45,21 @@ pipelineJob('employee-job-dockerTwo') {
                         }
                         branch 'main'
                         scriptPath('Jenkinsfile-docker')
+                }
+            }
+        }
+    }  
+}
+pipelineJob('employee-job-kubernates') {
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url 'https://github.com/hugojesusmr/employee.git'
+                        }
+                        branch 'main'
+                        scriptPath('Jenkinsfile-kubernetes')
                 }
             }
         }
