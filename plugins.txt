@@ -2,5 +2,8 @@ authorize-project:1.4.0
 job-dsl:1.81
 workflow-aggregator:590.v6a_d052e5a_a_b_5
 git:4.11.3
+jacoco-plugin: 3.3.2
+SonarQube-Scanner:2.14
+HTML-Publisher: 1.30
 
 
