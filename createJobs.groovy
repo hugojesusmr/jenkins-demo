@@ -13,7 +13,33 @@ pipelineJob('employee-job-sonarqube') {
                 git {
                     remote {
                         url 'https://github.com/hugojesusmr/config-server.git'
-                        url 'https://github.com/hugojesusmr/registry-service.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}  
+pipelineJob('employee-job-sonarqube') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {   
+                        url 'https://github.com/hugojesusmr/registry-service.git'  
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}  
+pipelineJob('employee-job-sonarqube') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
                         url 'https://github.com/hugojesusmr/product-service.git'
                     }
                     branch 'master'
