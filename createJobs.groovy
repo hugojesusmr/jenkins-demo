@@ -13,7 +13,7 @@ pipelineJob('employee-job-sonarqube') {
                 git {
                     remote {
                         url 'https://github.com/hugojesusmr/MicroservicesDocker.git'
-                        searchPaths config-server
+                        searchPaths: config-server
                     }
                     branch 'master'
                 }
