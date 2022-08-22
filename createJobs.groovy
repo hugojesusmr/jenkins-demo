@@ -13,6 +13,8 @@ pipelineJob('employee-job-sonarqube') {
                 git {
                     remote {
                         url 'https://github.com/hugojesusmr/config-server.git'
+                        url 'https://github.com/hugojesusmr/registry-service.git'
+                        url 'https://github.com/hugojesusmr/product-service.git'
                     }
                     branch 'master'
                 }
