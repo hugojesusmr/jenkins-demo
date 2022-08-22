@@ -6,7 +6,7 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('master') {
+pipelineJob('employee-job-sonarqube') {
     definition {
         cpsScm {
             scm {
