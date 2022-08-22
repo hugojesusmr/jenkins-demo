@@ -6,48 +6,20 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('employee-job') {
+pipelineJob('master') {
     definition {
         cpsScm {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/hugojesusmr/employee.git'
+                        url 'https://github.com/hugojesusmr/MicroservicesDocker/config-server.git'
                     }
-                    branch 'main'
+                    branch 'master'
                 }
             }
         }
     }
 }  
-pipelineJob('employee-job-sonarqube') {
-        definition {
-            cpsScm {
-                scm {
-                    git {
-                        remote {
-                            url 'https://github.com/hugojesusmr/employee.git'
-                        }
-                        branch 'main'
-                        scriptPath('Jenkinsfile-sonarqube')
-                }
-            }
-        }
-    }  
-}
-pipelineJob('employee-job-dockerTwo') {
-        definition {
-            cpsScm {
-                scm {
-                    git {
-                        remote {
-                            url 'https://github.com/hugojesusmr/employee.git'
-                        }
-                        branch 'main'
-                        scriptPath('Jenkinsfile-docker')
-                }
-            }
-        }
-    }  
-}
+
+
 
