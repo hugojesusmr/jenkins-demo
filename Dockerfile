@@ -1,5 +1,5 @@
 
-FROM jenkins/jenkins:2.346.2-jdk11
+FROM jenkins/jenkins:lts
 
 USER root
 RUN curl -sSL https://get.docker.com/ | sh
