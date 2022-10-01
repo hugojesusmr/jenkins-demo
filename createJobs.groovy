@@ -6,13 +6,13 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('employee-job-sonarqube') {
+pipelineJob('master') {
     definition {
         cpsScm {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/hugojesusmr/config-server.git'
+                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
                     branch 'master'
                 }
@@ -20,7 +20,7 @@ pipelineJob('employee-job-sonarqube') {
         }
     }
 }  
-pipelineJob('employee-job-sonarqube') {
+/* pipelineJob('employee-job-sonarqube') {
     definition {
         cpsScm {
             scm {
@@ -48,6 +48,6 @@ pipelineJob('employee-job-sonarqube') {
         }
     }
 }  
-
+ */
 
 
