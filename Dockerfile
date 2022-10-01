@@ -1,7 +1,7 @@
 
 FROM jenkins/jenkins:lts
 
-USER root
+USER hugo
 RUN curl -sSL https://get.docker.com/ | sh
 RUN usermod -a -G docker jenkins
 USER jenkins
