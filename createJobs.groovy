@@ -7,9 +7,9 @@ pipelineJob('employee-job-sonarqube') {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
                     branch 'master'
-                    dir('config-server') {
+                    
                     scriptPath('config-server/Jenkinsfile')
-                    }
+                    
                 }
             }
         }
