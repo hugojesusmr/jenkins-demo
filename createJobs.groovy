@@ -43,6 +43,21 @@ pipelineJob('servicediscovery') {
         }
     }
 }  
+pipelineJob('servicegateway') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
+                    }
+                    branch 'servicegateway'
+                    scriptPath('gateway-service/Jenkinsfile')
+                }
+            }
+        }
+    }
+}  
 
 
 
