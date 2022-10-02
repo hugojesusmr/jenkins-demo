@@ -3,25 +3,8 @@ pipelineJob('employee-job-sonarqube') {
         cpsScm {
             scm {
                 git {
-                    remote {
-                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
-                    }
-                    branch 'master'
-                    
-                    scriptPath('config-server/Jenkinsfile')
-                    
-                }
-            }
-        }
-    }
-}  
-/* pipelineJob('employee-job-sonarqube') {
-    definition {
-        cpsScm {
-            scm {
-                git {
                     remote {   
-                        url 'https://github.com/hugojesusmr/registry-service.git'  
+                        url 'https://github.com/hugojesusmr/employee.git'  
                     }
                     branch 'master'
                 }
@@ -29,20 +12,7 @@ pipelineJob('employee-job-sonarqube') {
         }
     }
 }  
-pipelineJob('employee-job-sonarqube') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url 'https://github.com/hugojesusmr/product-service.git'
-                    }
-                    branch 'master'
-                }
-            }
-        }
-    }
-}  
- */
+ 
+ 
 
 
