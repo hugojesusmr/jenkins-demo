@@ -58,6 +58,36 @@ pipelineJob('servicegateway') {
         }
     }
 }  
+pipelineJob('serviceinventory') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
+                    }
+                    branch 'serviceinventory'
+                    scriptPath('inventory-service/Jenkinsfile')
+                }
+            }
+        }
+    }
+}  
+pipelineJob('serviceorder') {
+    definition {
+        cpsScm {
+            scm {q
+                git {
+                    remote {
+                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
+                    }
+                    branch 'serviceorder'
+                    scriptPath('order-service/Jenkinsfile')
+                }
+            }
+        }
+    }
+}  
 
 
 
