@@ -76,7 +76,7 @@ pipelineJob('serviceinventory') {
 pipelineJob('servicenotification') {
     definition {
         cpsScm {
-            scm {q
+            scm {
                 git {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
