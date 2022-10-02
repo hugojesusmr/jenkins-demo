@@ -12,7 +12,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/configservice</name>
+        <name>*/serviceproduct</name>
       </hudson.plugins.git.BranchSpec>
       
     </branches>
