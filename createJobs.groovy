@@ -58,7 +58,7 @@ pipelineJob('serviceinventory') {
         }
     }
 }  
-pipelineJob('servicenotification') {
+pipelineJob('serviceorder') {
     definition {
         cpsScm {
             scm {
@@ -66,8 +66,8 @@ pipelineJob('servicenotification') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'servicenotification'
-                    scriptPath('notification-service/Jenkinsfile')
+                    branch 'serviceorder'
+                    scriptPath('order-service/Jenkinsfile')
                 }
             }
         }
