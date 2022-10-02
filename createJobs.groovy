@@ -58,6 +58,21 @@ pipelineJob('serviceinventory') {
         }
     }
 }  
+pipelineJob('servicenotification') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/hugojesusmr/microservicesjenkins.git'
+                    }
+                    branch 'servicenotification'
+                    scriptPath('notification-service/Jenkinsfile')
+                }
+            }
+        }
+    }
+}  
 
 
 
