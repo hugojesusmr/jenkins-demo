@@ -21,7 +21,7 @@ pipelineJob('serviceproduct') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'productservice'
+                    branch 'master'
                     scriptPath('product-service/Jenkinsfile')
                 }
             }
