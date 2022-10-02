@@ -36,7 +36,7 @@ pipelineJob('servicediscovery') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'servicediscovery'
+                    branch 'master'
                     scriptPath('discovery-service/Jenkinsfile')
                 }
             }
@@ -51,7 +51,7 @@ pipelineJob('servicegateway') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'servicegateway'
+                    branch 'master'
                     scriptPath('gateway-service/Jenkinsfile')
                 }
             }
@@ -66,7 +66,7 @@ pipelineJob('serviceinventory') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'serviceinventory'
+                    branch 'master'
                     scriptPath('inventory-service/Jenkinsfile')
                 }
             }
@@ -81,7 +81,7 @@ pipelineJob('servicenotification') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'servicenotification'
+                    branch 'master'
                     scriptPath('notification-service/Jenkinsfile')
                 }
             }
@@ -97,7 +97,7 @@ pipelineJob('serviceorder') {
                     remote {
                         url 'https://github.com/hugojesusmr/microservicesjenkins.git'
                     }
-                    branch 'serviceorder'
+                    branch 'master'
                     scriptPath('order-service/Jenkinsfile')
                 }
             }
